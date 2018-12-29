@@ -35,7 +35,7 @@ def two_sum(nums, target):
       return [dic[n], index]  
 
 numbers = []
-for i in range(10^6):
+for i in range(1000000):
     numbers.append(randint(-10, 10))
 
 if __name__ == "__main__":
