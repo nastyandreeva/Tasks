@@ -36,7 +36,7 @@ def two_sum(nums, target):
 
 numbers = []
 for i in range(1000000):
-    numbers.append(randint(-10, 10))
+    numbers.append(randint(-100, 100))
 
 if __name__ == "__main__":
   print(two_sum_brute(numbers, 9))
