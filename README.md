@@ -21,5 +21,6 @@
    print(two_sum_brute(numbers, 9))
    print(two_sum(numbers, 9))
 ```
+Среднее время выполнения функции  two_sum_brute: (19,1642-05 с.)/10 = 1,9164e-05 с.
+Среднее время выполнения функции  two_sum: (42,8698e-05 с.)/10 = 4,287e-05 с.
 
-![Результат](https://github.com/nastyandreeva/Tasks/blob/master/2/Время.JPG)
