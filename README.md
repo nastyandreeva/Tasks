@@ -9,10 +9,16 @@
 ```python
  from random import randint
 ```
+Результаты будем записывать в файл test.txt, чтобы потом проанализировать время выполнения каждой функции
+```python
+with open('test.txt', 'a') as f:
+       f.write(f'Время выполнения функции {func.__name__} заняло: {time_delta:.5}\n')
+```
+
 Создали пустой список numbers и сгенирировали в него случайные целые числа от 10 до -10 :
 ```python
  numbers = []
- for i in range(10^6):
+ for i in range(1000000):
     numbers.append(randint(-10, 10))
 ```
 И запустили на выполнения две функции с данным списком:
