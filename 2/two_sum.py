@@ -8,7 +8,8 @@ def deco(func):
     result = func(*args, **kwargs)
     end_time = time.time()  # завершение таймера
     time_delta = end_time - start_time
-    print(f'Время выполнения кода {func.__name__} заняло: {time_delta}')
+    with open('test.txt', 'a') as f:
+       f.write(f'Время выполнения функции {func.__name__} заняло: {time_delta:.5}\n')
     return result
   return inner
 
